@@ -1,0 +1,7 @@
+{
+    "samples":      "/disk3/Data/RNAseq/SEQ20_004_LiverDB/Small_Scale_liver.txt",
+    "INDEX_BASE":   "/disk2/Resources/seqDB/ensembl",
+    "VERSION":      "release-97",
+    "BASE_PATH":    "/disk3/Data/RNAseq/SEQ20_004_LiverDB",
+    "PROJECT_PATH": "/disk3/Data/RNAseq/SEQ20_004_LiverDB/projectFiles"
+}

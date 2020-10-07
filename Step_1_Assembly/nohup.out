@@ -1,0 +1,68 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 15
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	STAR_align
+	1	all
+	1	fastqdump
+	1	makeHTSeqTables
+	4
+
+[Wed Sep  9 15:54:59 2020]
+rule fastqdump:
+    input: SRAs/SRR8094770.sra, METADATA/SRR8094770.json
+    output: FASTQs/SRR8094770_1.fastq, FASTQs/SRR8094770_2.fastq
+    jobid: 4
+    wildcards: sample=SRR8094770
+
+[33mJob counts:
+	count	jobs
+	1	fastqdump
+	1[0m
+Terminating processes on user request, this might take some time.
+[32m[Wed Sep  9 15:55:03 2020][0m
+[31mError in rule fastqdump:[0m
+[31m    jobid: 0[0m
+[31m    output: FASTQs/SRR8094770_1.fastq, FASTQs/SRR8094770_2.fastq[0m
+[31m[0m
+[31mRuleException:
+CalledProcessError in line 151 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+Command 'sleep $[ ( $RANDOM % 10 )  + 12 ] ;  mkdir -p FASTQs/ ;' died with <Signals.SIGINT: 2>.
+  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 151, in __rule_fastqdump
+  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+Complete log: /home/kasper/renaldb/Step_1_Assembly/.snakemake/log/2020-09-09T155459.373893.snakemake.log
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 15
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	1	STAR_align
+	1	all
+	1	fastqdump
+	1	makeHTSeqTables
+	4
+
+[Wed Sep  9 15:55:05 2020]
+rule fastqdump:
+    input: SRAs/SRR8094770.sra, METADATA/SRR8094770.json
+    output: FASTQs/SRR8094770_1.fastq, FASTQs/SRR8094770_2.fastq
+    jobid: 4
+    wildcards: sample=SRR8094770
+
+[33mJob counts:
+	count	jobs
+	1	fastqdump
+	1[0m
+2020-09-09T13:55:34 fastq-dump.2.10.5 err: item not found while constructing within virtual database module - the path 'SRAs/SRR8094770.sra' cannot be opened as database or table
+fastq-dump (PID 17861) quit with error code 3
+[31mMissingOutputException in line 141 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+Job completed successfully, but some output files are missing. Missing files after 5 seconds:
+FASTQs/SRR8094770_1.fastq
+This might be due to filesystem latency. If that is the case, consider to increase the wait time with --latency-wait.[0m
+[31mExiting because a job execution failed. Look above for error message[0m
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/kasper/renaldb/Step_1_Assembly/.snakemake/log/2020-09-09T155505.242861.snakemake.log

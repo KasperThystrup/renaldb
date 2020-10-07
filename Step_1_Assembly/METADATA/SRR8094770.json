@@ -1,0 +1,23 @@
+{
+    "BioProject": "PRJNA445694",
+    "BioSample": "SAMN10279258",
+    "EXPERIMENT_accession": "SRX4921622",
+    "EXPERIMENT_alias": "GSM3442843",
+    "INSTRUMENT_MODEL": "Illumina HiSeq 2500",
+    "LAYOUT": "SINGLE",
+    "LIBRARY_SELECTION": "size fractionation",
+    "LIBRARY_STRATEGY": "miRNA-Seq",
+    "RUN_accession": "SRR8094770",
+    "SAMPLE_DESCRIPTOR_accession": "SRS3966948",
+    "STUDY_TITLE": "A novel reprogramming strategy to generate functionally competent human hepatocytes",
+    "STUDY_accession": "SRP136469",
+    "STUDY_alias": "GSE112330",
+    "TAXON_ID": "9606",
+    "ftp_link": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX492/SRX4921622/SRR8094770/SRR8094770.sra",
+    "sample_attribs": {
+        "batch number": "19",
+        "cell type": "human hepatocarcinoma",
+        "source_name": "human hepatocarcinoma",
+        "treatment": "HEF medium"
+    }
+}

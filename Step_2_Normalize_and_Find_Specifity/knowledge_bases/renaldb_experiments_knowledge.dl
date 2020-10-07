@@ -1,0 +1,1816 @@
++ source("ERR023144", "Brain")
++ strain("ERR023144", "Singapore")
++ age("ERR023144", "Adult")
+
++ source("ERR023145", "Heart")
++ strain("ERR023145", "Singapore")
++ age("ERR023145", "Adult")
+
++ source("ERR023146", "Head Kidney")
++ strain("ERR023146", "Singapore")
++ age("ERR023146", "Adult")
+
++ source("ERR023147", "Brain")
++ strain("ERR023147", "Singapore")
++ age("ERR023147", "Adult")
+
++ source("ERR023149", "Head Kidney")
++ strain("ERR023149", "Singapore")
++ age("ERR023149", "Adult")
+
++ source("ERR023150", "Heart")
++ strain("ERR023150", "Singapore")
++ age("ERR023150", "Adult")
+
++ source("ERR030873", "Testis")
++ strain("ERR030873", "Caucasian")
++ sex("ERR030873", "Male")
++ age("ERR030873", "Years 19")
+
++ source("ERR030874", "Ovary")
++ strain("ERR030874", "African")
++ sex("ERR030874", "Female")
++ age("ERR030874", "Years 47")
+
++ source("ERR030876", "Muscle")
++ strain("ERR030876", "Caucasian")
++ sex("ERR030876", "Male")
++ age("ERR030876", "Years 77")
+
++ source("ERR030879", "Lung")
++ strain("ERR030879", "Caucasian")
++ sex("ERR030879", "Male")
++ age("ERR030879", "Years 65")
+
++ source("ERR030880", "Adipose")
++ strain("ERR030880", "Caucasian")
++ sex("ERR030880", "Female")
++ age("ERR030880", "Years 73")
+
++ source("ERR030881", "Adrenal")
++ strain("ERR030881", "Caucasian")
++ sex("ERR030881", "Male")
++ age("ERR030881", "Years 60")
+
++ source("ERR030882", "Brain")
++ strain("ERR030882", "Caucasian")
++ sex("ERR030882", "Female")
++ age("ERR030882", "Years 77")
+
++ source("ERR030883", "Breast")
++ strain("ERR030883", "Caucasian")
++ sex("ERR030883", "Female")
++ age("ERR030883", "Years 29")
+
++ source("ERR030884", "Colon")
++ strain("ERR030884", "Caucasian")
++ sex("ERR030884", "Female")
++ age("ERR030884", "Years 68")
+
++ source("ERR030885", "Kidney")
++ strain("ERR030885", "Caucasian")
++ sex("ERR030885", "Female")
++ age("ERR030885", "Years 60")
+
++ source("ERR030886", "Heart")
++ strain("ERR030886", "Caucasian")
++ sex("ERR030886", "Male")
++ age("ERR030886", "Years 77")
+
++ source("ERR030887", "Liver")
++ strain("ERR030887", "Caucasian")
++ sex("ERR030887", "Male")
++ age("ERR030887", "Years 37")
+
++ source("ERR030888", "Adipose")
++ strain("ERR030888", "Caucasian")
++ sex("ERR030888", "Female")
++ age("ERR030888", "Years 73")
+
++ source("ERR030889", "Adrenal")
++ strain("ERR030889", "Caucasian")
++ sex("ERR030889", "Male")
++ age("ERR030889", "Years 60")
+
++ source("ERR030891", "Breast")
++ strain("ERR030891", "Caucasian")
++ sex("ERR030891", "Female")
++ age("ERR030891", "Years 29")
+
++ source("ERR030892", "Colon")
++ strain("ERR030892", "Caucasian")
++ sex("ERR030892", "Female")
++ age("ERR030892", "Years 68")
+
++ source("ERR030893", "Kidney")
++ strain("ERR030893", "Caucasian")
++ sex("ERR030893", "Female")
++ age("ERR030893", "Years 60")
+
++ source("ERR030894", "Heart")
++ strain("ERR030894", "Caucasian")
++ sex("ERR030894", "Male")
++ age("ERR030894", "Years 77")
+
++ source("ERR030896", "Lung")
++ strain("ERR030896", "Caucasian")
++ sex("ERR030896", "Male")
++ age("ERR030896", "Years 65")
+
++ source("ERR030899", "Muscle")
++ strain("ERR030899", "Caucasian")
++ sex("ERR030899", "Male")
++ age("ERR030899", "Years 77")
+
++ source("ERR030901", "Ovary")
++ strain("ERR030901", "African")
++ sex("ERR030901", "Female")
++ age("ERR030901", "Years 47")
+
++ source("ERR030902", "Testis")
++ strain("ERR030902", "Caucasian")
++ sex("ERR030902", "Male")
++ age("ERR030902", "Years 19")
+
++ source("ERR032203", "Liver")
++ strain("ERR032203", "DBAxC57BL/6J")
++ age("ERR032203", "Adult")
+
++ source("ERR032204", "Liver")
++ strain("ERR032204", "DBAxC57BL/6J")
++ age("ERR032204", "Adult")
+
++ source("ERR032221", "Lung")
++ strain("ERR032221", "DBAxC57BL/6J")
++ age("ERR032221", "Adult")
+
++ source("ERR032222", "Lung")
++ strain("ERR032222", "DBAxC57BL/6J")
++ age("ERR032222", "Adult")
+
++ source("ERR032223", "Lung")
++ strain("ERR032223", "DBAxC57BL/6J")
++ age("ERR032223", "Adult")
+
++ source("ERR032224", "Lung")
++ strain("ERR032224", "DBAxC57BL/6J")
++ age("ERR032224", "Adult")
+
++ source("ERR032225", "Lung")
++ strain("ERR032225", "DBAxC57BL/6J")
++ age("ERR032225", "Adult")
+
++ source("ERR032226", "Lung")
++ strain("ERR032226", "DBAxC57BL/6J")
++ age("ERR032226", "Adult")
+
++ source("ERR032227", "Heart")
++ strain("ERR032227", "DBAxC57BL/6J")
++ age("ERR032227", "Adult")
+
++ source("ERR032228", "Heart")
++ strain("ERR032228", "DBAxC57BL/6J")
++ age("ERR032228", "Adult")
+
++ source("ERR032229", "Heart")
++ strain("ERR032229", "DBAxC57BL/6J")
++ age("ERR032229", "Adult")
+
++ source("ERR032230", "Heart")
++ strain("ERR032230", "DBAxC57BL/6J")
++ age("ERR032230", "Adult")
+
++ source("ERR032231", "Heart")
++ strain("ERR032231", "DBAxC57BL/6J")
++ age("ERR032231", "Adult")
+
++ source("ERR032232", "Hippocampus")
++ strain("ERR032232", "DBAxC57BL/6J")
++ age("ERR032232", "Adult")
+
++ source("ERR035545", "Brain")
++ strain("ERR035545", "Singapore")
++ age("ERR035545", "Adult")
+
++ source("ERR035546", "Heart")
++ strain("ERR035546", "Singapore")
++ age("ERR035546", "Adult")
+
++ source("ERR035547", "Head Kidney")
++ strain("ERR035547", "Singapore")
++ age("ERR035547", "Adult")
+
++ source("SRR1015947", "Kidney")
++ age("SRR1015947", "E14.5")
+
++ source("SRR1015948", "Kidney")
++ age("SRR1015948", "E14.5")
+
++ source("SRR1015949", "Kidney")
++ age("SRR1015949", "E14.5")
+
++ source("SRR1015953", "Endothelial Cells")
++ isolatedfrom("SRR1015953", "Endothelial Cells", "Embryonic Kidney")
++ age("SRR1015953", "E14.5")
+
++ source("SRR1015954", "Endothelial Cells")
++ isolatedfrom("SRR1015954", "Endothelial Cells", "Embryonic Kidney")
++ age("SRR1015954", "E14.5")
+
++ source("SRR1015955", "Endothelial Cells")
++ isolatedfrom("SRR1015955", "Endothelial Cells", "Embryonic Kidney")
++ age("SRR1015955", "E14.5")
+
++ source("SRR1032330", "Kidney")
++ strain("SRR1032330", "Six2-TGC")
++ age("SRR1032330", "E16")
+
++ source("SRR1032331", "Kidney")
++ strain("SRR1032331", "Six2-TGC")
++ age("SRR1032331", "E16")
+
++ source("SRR1032333", "Kidney")
++ strain("SRR1032333", "Six2-TGC")
++ age("SRR1032333", "E16")
+
++ source("SRR1032335", "Kidney")
++ strain("SRR1032335", "Six2-TGC")
++ age("SRR1032335", "E16")
+
++ source("SRR1032336", "Kidney")
++ strain("SRR1032336", "Six2-TGC")
++ age("SRR1032336", "E16")
+
++ source("SRR1032337", "Kidney")
++ strain("SRR1032337", "Six2-TGC")
++ age("SRR1032337", "E16")
+
++ source("SRR1032338", "Kidney")
++ strain("SRR1032338", "Six2-TGC")
++ age("SRR1032338", "E16")
+
++ source("SRR1032339", "Kidney")
++ strain("SRR1032339", "Six2-TGC")
++ age("SRR1032339", "E16")
+
++ source("SRR1032341", "Kidney")
++ strain("SRR1032341", "Six2-TGC")
++ age("SRR1032341", "E16")
+
++ source("SRR1032879", "HEK-293 Cells")
++ isolatedfrom("SRR1032879", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1032880", "HEK-293 Cells")
++ isolatedfrom("SRR1032880", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1032881", "HEK-293 Cells")
++ isolatedfrom("SRR1032881", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1032882", "HEK-293 Cells")
++ isolatedfrom("SRR1032882", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1032883", "HEK-293 Cells")
++ isolatedfrom("SRR1032883", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1032884", "HEK-293 Cells")
++ isolatedfrom("SRR1032884", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1158513", "Adrenal")
++ strain("SRR1158513", "C57/BL6")
+
++ source("SRR1158514", "Adrenal")
++ strain("SRR1158514", "C57/BL6")
+
++ source("SRR1158515", "Adrenal")
++ strain("SRR1158515", "C57/BL6")
+
++ source("SRR1158516", "Adrenal")
++ strain("SRR1158516", "C57/BL6")
+
++ source("SRR1158517", "Adrenal")
++ strain("SRR1158517", "C57/BL6")
+
++ source("SRR1158518", "Adrenal")
++ strain("SRR1158518", "C57/BL6")
+
++ source("SRR1158519", "Adrenal")
++ strain("SRR1158519", "C57/BL6")
+
++ source("SRR1158520", "Adrenal")
++ strain("SRR1158520", "C57/BL6")
+
++ source("SRR1158521", "Aorta")
++ strain("SRR1158521", "C57/BL6")
+
++ source("SRR1158522", "Aorta")
++ strain("SRR1158522", "C57/BL6")
+
++ source("SRR1158523", "Aorta")
++ strain("SRR1158523", "C57/BL6")
+
++ source("SRR1158524", "Aorta")
++ strain("SRR1158524", "C57/BL6")
+
++ source("SRR1158525", "Aorta")
++ strain("SRR1158525", "C57/BL6")
+
++ source("SRR1158526", "Aorta")
++ strain("SRR1158526", "C57/BL6")
+
++ source("SRR1158527", "Aorta")
++ strain("SRR1158527", "C57/BL6")
+
++ source("SRR1158528", "Aorta")
++ strain("SRR1158528", "C57/BL6")
+
++ source("SRR1158529", "Brainstem")
++ strain("SRR1158529", "C57/BL6")
+
++ source("SRR1158530", "Brainstem")
++ strain("SRR1158530", "C57/BL6")
+
++ source("SRR1158531", "Brainstem")
++ strain("SRR1158531", "C57/BL6")
+
++ source("SRR1158532", "Brainstem")
++ strain("SRR1158532", "C57/BL6")
+
++ source("SRR1158533", "Brainstem")
++ strain("SRR1158533", "C57/BL6")
+
++ source("SRR1158534", "Brainstem")
++ strain("SRR1158534", "C57/BL6")
+
++ source("SRR1158535", "Brainstem")
++ strain("SRR1158535", "C57/BL6")
+
++ source("SRR1158536", "Brainstem")
++ strain("SRR1158536", "C57/BL6")
+
++ source("SRR1158537", "Adipose")
++ strain("SRR1158537", "C57/BL6")
+
++ source("SRR1158538", "Adipose")
++ strain("SRR1158538", "C57/BL6")
+
++ source("SRR1158539", "Adipose")
++ strain("SRR1158539", "C57/BL6")
+
++ source("SRR1158540", "Adipose")
++ strain("SRR1158540", "C57/BL6")
+
++ source("SRR1158541", "Adipose")
++ strain("SRR1158541", "C57/BL6")
+
++ source("SRR1158542", "Adipose")
++ strain("SRR1158542", "C57/BL6")
+
++ source("SRR1158543", "Adipose")
++ strain("SRR1158543", "C57/BL6")
+
++ source("SRR1158544", "Adipose")
++ strain("SRR1158544", "C57/BL6")
+
++ source("SRR1158545", "Cerebellum")
++ strain("SRR1158545", "C57/BL6")
+
++ source("SRR1158546", "Cerebellum")
++ strain("SRR1158546", "C57/BL6")
+
++ source("SRR1158547", "Cerebellum")
++ strain("SRR1158547", "C57/BL6")
+
++ source("SRR1158548", "Cerebellum")
++ strain("SRR1158548", "C57/BL6")
+
++ source("SRR1158549", "Cerebellum")
++ strain("SRR1158549", "C57/BL6")
+
++ source("SRR1158550", "Cerebellum")
++ strain("SRR1158550", "C57/BL6")
+
++ source("SRR1158551", "Cerebellum")
++ strain("SRR1158551", "C57/BL6")
+
++ source("SRR1158552", "Cerebellum")
++ strain("SRR1158552", "C57/BL6")
+
++ source("SRR1158553", "Heart")
++ strain("SRR1158553", "C57/BL6")
+
++ source("SRR1158554", "Heart")
++ strain("SRR1158554", "C57/BL6")
+
++ source("SRR1158555", "Heart")
++ strain("SRR1158555", "C57/BL6")
+
++ source("SRR1158556", "Heart")
++ strain("SRR1158556", "C57/BL6")
+
++ source("SRR1158557", "Heart")
++ strain("SRR1158557", "C57/BL6")
+
++ source("SRR1158558", "Heart")
++ strain("SRR1158558", "C57/BL6")
+
++ source("SRR1158559", "Heart")
++ strain("SRR1158559", "C57/BL6")
+
++ source("SRR1158560", "Heart")
++ strain("SRR1158560", "C57/BL6")
+
++ source("SRR1158561", "Hypothalamus")
++ strain("SRR1158561", "C57/BL6")
+
++ source("SRR1158562", "Hypothalamus")
++ strain("SRR1158562", "C57/BL6")
+
++ source("SRR1158563", "Hypothalamus")
++ strain("SRR1158563", "C57/BL6")
+
++ source("SRR1158564", "Hypothalamus")
++ strain("SRR1158564", "C57/BL6")
+
++ source("SRR1158565", "Hypothalamus")
++ strain("SRR1158565", "C57/BL6")
+
++ source("SRR1158566", "Hypothalamus")
++ strain("SRR1158566", "C57/BL6")
+
++ source("SRR1158567", "Hypothalamus")
++ strain("SRR1158567", "C57/BL6")
+
++ source("SRR1158568", "Hypothalamus")
++ strain("SRR1158568", "C57/BL6")
+
++ source("SRR1158569", "Kidney")
++ strain("SRR1158569", "C57/BL6")
+
++ source("SRR1158570", "Kidney")
++ strain("SRR1158570", "C57/BL6")
+
++ source("SRR1158571", "Kidney")
++ strain("SRR1158571", "C57/BL6")
+
++ source("SRR1158572", "Kidney")
++ strain("SRR1158572", "C57/BL6")
+
++ source("SRR1158573", "Kidney")
++ strain("SRR1158573", "C57/BL6")
+
++ source("SRR1158574", "Kidney")
++ strain("SRR1158574", "C57/BL6")
+
++ source("SRR1158575", "Kidney")
++ strain("SRR1158575", "C57/BL6")
+
++ source("SRR1158576", "Kidney")
++ strain("SRR1158576", "C57/BL6")
+
++ source("SRR1158577", "Liver")
++ strain("SRR1158577", "C57/BL6")
+
++ source("SRR1158578", "Liver")
++ strain("SRR1158578", "C57/BL6")
+
++ source("SRR1158579", "Liver")
++ strain("SRR1158579", "C57/BL6")
+
++ source("SRR1158580", "Liver")
++ strain("SRR1158580", "C57/BL6")
+
++ source("SRR1158581", "Liver")
++ strain("SRR1158581", "C57/BL6")
+
++ source("SRR1158582", "Liver")
++ strain("SRR1158582", "C57/BL6")
+
++ source("SRR1158583", "Liver")
++ strain("SRR1158583", "C57/BL6")
+
++ source("SRR1158584", "Liver")
++ strain("SRR1158584", "C57/BL6")
+
++ source("SRR1158585", "Lung")
++ strain("SRR1158585", "C57/BL6")
+
++ source("SRR1158586", "Lung")
++ strain("SRR1158586", "C57/BL6")
+
++ source("SRR1158587", "Lung")
++ strain("SRR1158587", "C57/BL6")
+
++ source("SRR1158588", "Lung")
++ strain("SRR1158588", "C57/BL6")
+
++ source("SRR1158589", "Lung")
++ strain("SRR1158589", "C57/BL6")
+
++ source("SRR1158590", "Lung")
++ strain("SRR1158590", "C57/BL6")
+
++ source("SRR1158591", "Lung")
++ strain("SRR1158591", "C57/BL6")
+
++ source("SRR1158592", "Lung")
++ strain("SRR1158592", "C57/BL6")
+
++ source("SRR1158593", "Muscle")
++ strain("SRR1158593", "C57/BL6")
+
++ source("SRR1158594", "Muscle")
++ strain("SRR1158594", "C57/BL6")
+
++ source("SRR1158595", "Muscle")
++ strain("SRR1158595", "C57/BL6")
+
++ source("SRR1158596", "Muscle")
++ strain("SRR1158596", "C57/BL6")
+
++ source("SRR1158597", "Muscle")
++ strain("SRR1158597", "C57/BL6")
+
++ source("SRR1158598", "Muscle")
++ strain("SRR1158598", "C57/BL6")
+
++ source("SRR1158599", "Muscle")
++ strain("SRR1158599", "C57/BL6")
+
++ source("SRR1158600", "Muscle")
++ strain("SRR1158600", "C57/BL6")
+
++ source("SRR1158601", "Adipose")
++ strain("SRR1158601", "C57/BL6")
+
++ source("SRR1158602", "Adipose")
++ strain("SRR1158602", "C57/BL6")
+
++ source("SRR1158603", "Adipose")
++ strain("SRR1158603", "C57/BL6")
+
++ source("SRR1158604", "Adipose")
++ strain("SRR1158604", "C57/BL6")
+
++ source("SRR1158605", "Adipose")
++ strain("SRR1158605", "C57/BL6")
+
++ source("SRR1158606", "Adipose")
++ strain("SRR1158606", "C57/BL6")
+
++ source("SRR1158607", "Adipose")
++ strain("SRR1158607", "C57/BL6")
+
++ source("SRR1158608", "Adipose")
++ strain("SRR1158608", "C57/BL6")
+
++ source("SRR1205139", "Kidney")
++ strain("SRR1205139", "C57BL/6J")
+
++ source("SRR1205140", "Kidney")
++ strain("SRR1205140", "C57BL/6J")
+
++ source("SRR1205141", "Kidney")
++ strain("SRR1205141", "C57BL/6J")
+
++ source("SRR1205142", "Kidney")
++ strain("SRR1205142", "C57BL/6J")
+
++ source("SRR1205143", "Kidney")
++ strain("SRR1205143", "C57BL/6J")
+
++ source("SRR1205144", "Kidney")
++ strain("SRR1205144", "C57BL/6J")
+
++ source("SRR1205145", "Kidney")
++ strain("SRR1205145", "C57BL/6J")
+
++ source("SRR1205146", "Kidney")
++ strain("SRR1205146", "C57BL/6J")
+
++ source("SRR1205147", "Kidney")
++ strain("SRR1205147", "C57BL/6J")
+
++ source("SRR1205148", "Kidney")
++ strain("SRR1205148", "C57BL/6J")
+
++ source("SRR1205149", "Kidney")
++ strain("SRR1205149", "C57BL/6J")
+
++ source("SRR1205150", "Kidney")
++ strain("SRR1205150", "C57BL/6J")
+
++ source("SRR1205833", "Nephron Progenitor Cells")
++ isolatedfrom("SRR1205833", "Nephron Progenitor Cells", "Embryonic Kidney")
++ age("SRR1205833", "E15.5")
+
++ source("SRR1205834", "Nephron Progenitor Cells")
++ isolatedfrom("SRR1205834", "Nephron Progenitor Cells", "Embryonic Kidney")
++ age("SRR1205834", "E15.5")
+
++ source("SRR1210627", "HEK-293 Cells")
++ isolatedfrom("SRR1210627", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1210628", "HEK-293 Cells")
++ isolatedfrom("SRR1210628", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1210629", "HEK-293 Cells")
++ isolatedfrom("SRR1210629", "HEK-293 Cells", "Embryonic Kidney")
+
++ source("SRR1508577", "Metanephros")
++ age("SRR1508577", "E12.5")
+
++ source("SRR1536710", "Kidney Tubules")
+
++ source("SRR1536711", "Kidney Tubules")
+
++ source("SRR1573494", "HEK-293T Cells")
++ isolatedfrom("SRR1573494", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573495", "HEK-293T Cells")
++ isolatedfrom("SRR1573495", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573496", "HEK-293T Cells")
++ isolatedfrom("SRR1573496", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573497", "HEK-293T Cells")
++ isolatedfrom("SRR1573497", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573498", "HEK-293T Cells")
++ isolatedfrom("SRR1573498", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573499", "HEK-293T Cells")
++ isolatedfrom("SRR1573499", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573500", "HEK-293T Cells")
++ isolatedfrom("SRR1573500", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1573501", "HEK-293T Cells")
++ isolatedfrom("SRR1573501", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR1611806", "Kidney")
++ strain("SRR1611806", "129X1/SvJ")
++ age("SRR1611806", "Weeks 9")
+
++ source("SRR1611807", "Kidney")
++ strain("SRR1611807", "129X1/SvJ")
++ age("SRR1611807", "Weeks 9")
+
++ source("SRR1611808", "Kidney")
++ strain("SRR1611808", "129X1/SvJ")
++ age("SRR1611808", "Weeks 9")
+
++ source("SRR1611809", "Kidney")
++ strain("SRR1611809", "129X1/SvJ")
++ age("SRR1611809", "Weeks 9")
+
++ source("SRR1611810", "Kidney")
++ strain("SRR1611810", "129X1/SvJ")
++ age("SRR1611810", "Weeks 9")
+
++ source("SRR1611811", "Kidney")
++ strain("SRR1611811", "129X1/SvJ")
++ age("SRR1611811", "Weeks 9")
+
++ source("SRR1611812", "Kidney")
++ strain("SRR1611812", "129X1/SvJ")
++ age("SRR1611812", "Weeks 9")
+
++ source("SRR1611813", "Kidney")
++ strain("SRR1611813", "129X1/SvJ")
++ age("SRR1611813", "Weeks 9")
+
++ source("SRR1611814", "Kidney")
++ strain("SRR1611814", "129X1/SvJ")
++ age("SRR1611814", "Weeks 9")
+
++ source("SRR1611815", "Kidney")
++ strain("SRR1611815", "129X1/SvJ")
++ age("SRR1611815", "Weeks 5.5")
+
++ source("SRR1611816", "Kidney")
++ strain("SRR1611816", "129X1/SvJ")
++ age("SRR1611816", "Weeks 5.5")
+
++ source("SRR1611817", "Kidney")
++ strain("SRR1611817", "129X1/SvJ")
++ age("SRR1611817", "Weeks 5.5")
+
++ source("SRR1611818", "Kidney")
++ strain("SRR1611818", "129X1/SvJ")
++ age("SRR1611818", "Weeks 5.5")
+
++ source("SRR1611819", "Kidney")
++ strain("SRR1611819", "129X1/SvJ")
++ age("SRR1611819", "Weeks 5.5")
+
++ source("SRR1611820", "Kidney")
++ strain("SRR1611820", "129X1/SvJ")
++ age("SRR1611820", "Weeks 5.5")
+
++ source("SRR1611821", "Kidney")
++ strain("SRR1611821", "129X1/SvJ")
++ age("SRR1611821", "Weeks 5.5")
+
++ source("SRR1611822", "Kidney")
++ strain("SRR1611822", "129X1/SvJ")
++ age("SRR1611822", "Weeks 5.5")
+
++ source("SRR1611823", "Kidney")
++ strain("SRR1611823", "129X1/SvJ")
++ age("SRR1611823", "Weeks 5.5")
+
++ source("SRR1611824", "Kidney")
++ strain("SRR1611824", "129X1/SvJ")
++ age("SRR1611824", "Weeks 5.5")
+
++ source("SRR1611825", "Kidney")
++ strain("SRR1611825", "129X1/SvJ")
++ age("SRR1611825", "Weeks 5.5")
+
++ source("SRR1647679", "Head Kidney")
+
++ source("SRR1647680", "Head Kidney")
+
++ source("SRR1647681", "Head Kidney")
+
++ source("SRR1703429", "Podocytes")
++ isolatedfrom("SRR1703429", "Podocytes", "Renal Corpuscle")
++ strain("SRR1703429", "CD-1")
++ age("SRR1703429", "Weeks 6")
+
++ source("SRR1703430", "Podocytes")
++ isolatedfrom("SRR1703430", "Podocytes", "Renal Corpuscle")
++ strain("SRR1703430", "CD-1")
++ age("SRR1703430", "Weeks 6")
+
++ source("SRR1703431", "Podocytes")
++ isolatedfrom("SRR1703431", "Podocytes", "Renal Corpuscle")
++ strain("SRR1703431", "CD-1")
++ age("SRR1703431", "Weeks 6")
+
++ source("SRR1758414", "Cap Mesenchyme")
++ strain("SRR1758414", "CD-1")
++ age("SRR1758414", "P1")
+
++ source("SRR1758415", "Renal Vesicle")
++ strain("SRR1758415", "CD-1")
++ age("SRR1758415", "P4")
+
++ source("SRR1758416", "Proximal Tubule")
++ strain("SRR1758416", "CD-1")
++ age("SRR1758416", "Adult")
+
++ source("SRR1758417", "Ureteric Stalk")
++ age("SRR1758417", "E11.5")
+
++ source("SRR1758418", "Ureteric Tip")
++ age("SRR1758418", "E11.5")
+
++ source("SRR1758419", "Cap Mesenchyme")
++ age("SRR1758419", "E12.5")
+
++ source("SRR1758420", "Proximal Tubule")
++ strain("SRR1758420", "CD-1")
++ age("SRR1758420", "E15.5")
+
++ source("SRR1758421", "Cortical Collecting Duct")
++ age("SRR1758421", "E15.5")
+
++ source("SRR1758422", "Podocytes")
++ isolatedfrom("SRR1758422", "Podocytes", "Renal Corpuscle")
++ age("SRR1758422", "E15.5")
+
++ source("SRR1758423", "Cortical Collecting Duct")
++ age("SRR1758423", "E15.5")
+
++ source("SRR1758424", "Ureter")
++ age("SRR1758424", "E15.5")
+
++ source("SRR1758425", "Podocytes")
++ isolatedfrom("SRR1758425", "Podocytes", "Renal Corpuscle")
++ age("SRR1758425", "E15.5")
+
++ source("SRR1758426", "Proximal Tubule")
++ strain("SRR1758426", "CD-1")
++ age("SRR1758426", "E15.5")
+
++ source("SRR1758427", "Ureter")
++ age("SRR1758427", "E15.5")
+
++ source("SRR1758428", "Cortical Collecting Duct")
++ age("SRR1758428", "E15.5")
+
++ source("SRR1758430", "Mesangial Cells")
++ isolatedfrom("SRR1758430", "Mesangial Cells", "Glomerular Mesangium")
++ age("SRR1758430", "Adult")
+
++ source("SRR1758431", "Mesangial Cells")
++ isolatedfrom("SRR1758431", "Mesangial Cells", "Glomerular Mesangium")
++ age("SRR1758431", "E15.5")
+
++ source("SRR1758432", "Endothelial Cells")
++ isolatedfrom("SRR1758432", "Endothelial Cells", "Renal Artery and Vein")
++ age("SRR1758432", "E15.5")
+
++ source("SRR1758433", "Endothelial Cells")
++ isolatedfrom("SRR1758433", "Endothelial Cells", "Glomerular Capillary System")
++ age("SRR1758433", "Adult")
+
++ source("SRR1772151", "Kidney")
++ strain("SRR1772151", "BALB/c")
+
++ source("SRR1772152", "Kidney")
++ strain("SRR1772152", "BALB/c")
+
++ source("SRR1772153", "Kidney")
++ strain("SRR1772153", "BALB/c")
+
++ source("SRR1772154", "Kidney")
++ strain("SRR1772154", "BALB/c")
+
++ source("SRR1772155", "Kidney")
++ strain("SRR1772155", "BALB/c")
+
++ source("SRR1772156", "Kidney")
++ strain("SRR1772156", "BALB/c")
+
++ source("SRR1772157", "Kidney")
++ strain("SRR1772157", "BALB/c")
+
++ source("SRR1772158", "Kidney")
++ strain("SRR1772158", "BALB/c")
+
++ source("SRR1772159", "Kidney")
++ strain("SRR1772159", "BALB/c")
+
++ source("SRR1772160", "Kidney")
++ strain("SRR1772160", "BALB/c")
+
++ source("SRR1772161", "Kidney")
++ strain("SRR1772161", "BALB/c")
+
++ source("SRR1772162", "Kidney")
++ strain("SRR1772162", "BALB/c")
+
++ source("SRR1772163", "Kidney")
++ strain("SRR1772163", "BALB/c")
+
++ source("SRR1772164", "Kidney")
++ strain("SRR1772164", "BALB/c")
+
++ source("SRR1772165", "Kidney")
++ strain("SRR1772165", "BALB/c")
+
++ source("SRR1772166", "Kidney")
++ strain("SRR1772166", "BALB/c")
+
++ source("SRR1772167", "Kidney")
++ strain("SRR1772167", "BALB/c")
+
++ source("SRR1772168", "Kidney")
++ strain("SRR1772168", "BALB/c")
+
++ source("SRR2050895", "Kidney")
++ age("SRR2050895", "Weeks 3")
+
++ source("SRR2050896", "Kidney")
++ age("SRR2050896", "Weeks 3")
+
++ source("SRR2050897", "Kidney")
++ age("SRR2050897", "Weeks 3")
+
++ source("SRR2050898", "Kidney")
++ age("SRR2050898", "Weeks 3")
+
++ source("SRR2050899", "Kidney")
++ age("SRR2050899", "Weeks 3")
+
++ source("SRR2050901", "Kidney")
++ age("SRR2050901", "Weeks 3")
+
++ source("SRR2050902", "Kidney")
++ age("SRR2050902", "Weeks 3")
+
++ source("SRR2050903", "Kidney")
++ age("SRR2050903", "Weeks 3")
+
++ source("SRR2050904", "Kidney")
++ age("SRR2050904", "Weeks 3")
+
++ source("SRR2084760", "Kidney")
++ strain("SRR2084760", "C57BL6/6")
++ age("SRR2084760", "E13.5")
+
++ source("SRR2084761", "Kidney")
++ strain("SRR2084761", "C57BL6/6")
++ age("SRR2084761", "E13.5")
+
++ source("SRR2084762", "Kidney")
++ strain("SRR2084762", "C57BL6/6")
++ age("SRR2084762", "E13.5")
+
++ source("SRR2084763", "Kidney")
++ strain("SRR2084763", "C57BL6/6")
++ age("SRR2084763", "E13.5")
+
++ source("SRR2084764", "Kidney")
++ strain("SRR2084764", "C57BL6/6")
++ age("SRR2084764", "E13.5")
+
++ source("SRR2084765", "Kidney")
++ strain("SRR2084765", "C57BL6/6")
++ age("SRR2084765", "E13.5")
+
++ source("SRR2087306", "Kidney Cortex")
+
++ source("SRR2087307", "Kidney Cortex")
+
++ source("SRR2087308", "Kidney Cortex")
+
++ source("SRR2087309", "Kidney Cortex")
+
++ source("SRR2087310", "Kidney Cortex")
+
++ source("SRR2087311", "Kidney Cortex")
+
++ source("SRR2087312", "Kidney Cortex")
+
++ source("SRR2087313", "Kidney Cortex")
+
++ source("SRR2087314", "Kidney Cortex")
+
++ source("SRR2087316", "Kidney Cortex")
+
++ source("SRR2087317", "Kidney Cortex")
+
++ source("SRR2087318", "Kidney Cortex")
+
++ source("SRR2087319", "Kidney Cortex")
+
++ source("SRR2087320", "Kidney Cortex")
+
++ source("SRR2087321", "Kidney Cortex")
+
++ source("SRR2087322", "Kidney Cortex")
+
++ source("SRR2087323", "Kidney Cortex")
+
++ source("SRR2087324", "Kidney Cortex")
+
++ source("SRR2087325", "Kidney Cortex")
+
++ source("SRR2087725", "Epithelial Cells")
++ isolatedfrom("SRR2087725", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087726", "Epithelial Cells")
++ isolatedfrom("SRR2087726", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087727", "Epithelial Cells")
++ isolatedfrom("SRR2087727", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087728", "Epithelial Cells")
++ isolatedfrom("SRR2087728", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087729", "Epithelial Cells")
++ isolatedfrom("SRR2087729", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087730", "Epithelial Cells")
++ isolatedfrom("SRR2087730", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087731", "Epithelial Cells")
++ isolatedfrom("SRR2087731", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087732", "Epithelial Cells")
++ isolatedfrom("SRR2087732", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087733", "Epithelial Cells")
++ isolatedfrom("SRR2087733", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087734", "Epithelial Cells")
++ isolatedfrom("SRR2087734", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087735", "Epithelial Cells")
++ isolatedfrom("SRR2087735", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR2087736", "Epithelial Cells")
++ isolatedfrom("SRR2087736", "Epithelial Cells", "Proximal Tubule")
+
++ source("SRR223507", "HK-2 Cells")
++ isolatedfrom("SRR223507", "HK-2 Cells", "Proximal Tubule")
+
++ source("SRR223508", "HK-2 Cells")
++ isolatedfrom("SRR223508", "HK-2 Cells", "Proximal Tubule")
+
++ source("SRR223509", "HK-2 Cells")
++ isolatedfrom("SRR223509", "HK-2 Cells", "Proximal Tubule")
+
++ source("SRR223510", "HK-2 Cells")
++ isolatedfrom("SRR223510", "HK-2 Cells", "Proximal Tubule")
+
++ source("SRR223511", "HK-2 Cells")
++ isolatedfrom("SRR223511", "HK-2 Cells", "Proximal Tubule")
+
+
++ source("SRR2588709", "Nephron Progenitor Cells")
++ isolatedfrom("SRR2588709", "Nephron Progenitor Cells", "Embryonic Kidney")
++ age("SRR2588709", "Weeks 17")
+
++ source("SRR2588710", "Nephron Progenitor Cells")
++ isolatedfrom("SRR2588710", "Nephron Progenitor Cells", "Embryonic Kidney")
++ strain("SRR2588710", "C57BL/6J")
++ age("SRR2588710", "E15.5")
+
++ source("SRR2927737", "Kidney")
++ strain("SRR2927737", "C57BL/6")
++ sex("SRR2927737", "Male")
++ age("SRR2927737", "Weeks 8")
+
++ source("SRR2989585", "Kidney")
++ strain("SRR2989585", "C57BL/6")
+
++ source("SRR2989586", "Kidney")
++ strain("SRR2989586", "C57BL/6")
+
++ source("SRR2989587", "Kidney")
++ strain("SRR2989587", "C57BL/6")
+
++ source("SRR2989589", "Kidney")
++ strain("SRR2989589", "C57BL/6")
+
++ source("SRR2989590", "Kidney")
++ strain("SRR2989590", "C57BL/6")
+
++ source("SRR2989591", "Kidney")
++ strain("SRR2989591", "C57BL/6")
+
++ source("SRR2989592", "Kidney")
++ strain("SRR2989592", "C57BL/6")
+
++ source("SRR2989593", "Kidney")
++ strain("SRR2989593", "C57BL/6")
+
++ source("SRR2989594", "Kidney")
++ strain("SRR2989594", "C57BL/6")
+
++ source("SRR2989595", "Kidney")
++ strain("SRR2989595", "C57BL/6")
+
++ source("SRR2989596", "Kidney")
++ strain("SRR2989596", "C57BL/6")
+
++ source("SRR2989597", "Kidney")
++ strain("SRR2989597", "C57BL/6")
+
++ source("SRR2989598", "Kidney")
++ strain("SRR2989598", "C57BL/6")
+
++ source("SRR2989599", "Kidney")
++ strain("SRR2989599", "C57BL/6")
+
++ source("SRR2989600", "Kidney")
++ strain("SRR2989600", "C57BL/6")
+
++ source("SRR2989601", "Kidney")
++ strain("SRR2989601", "C57BL/6")
+
++ source("SRR2989602", "Kidney")
++ strain("SRR2989602", "C57BL/6")
+
++ source("SRR299107", "Kidney")
+
++ source("SRR299118", "Kidney")
+
++ source("SRR306770", "Kidney")
++ sex("SRR306770", "Male")
++ age("SRR306770", "Adult")
+
++ source("SRR306851", "Kidney")
++ sex("SRR306851", "Female")
+
++ source("SRR306852", "Kidney")
++ sex("SRR306852", "Male")
+
++ source("SRR453077", "Ovary")
++ strain("SRR453077", "C57BL/6J")
++ age("SRR453077", "Weeks 8")
+
++ source("SRR453078", "Ovary")
++ strain("SRR453078", "C57BL/6J")
++ age("SRR453078", "Weeks 8")
+
++ source("SRR453079", "Ovary")
++ strain("SRR453079", "C57BL/6J")
++ age("SRR453079", "Weeks 8")
+
++ source("SRR453080", "Ovary")
++ strain("SRR453080", "C57BL/6J")
++ age("SRR453080", "Weeks 8")
+
++ source("SRR453081", "Ovary")
++ strain("SRR453081", "C57BL/6J")
++ age("SRR453081", "Weeks 8")
+
++ source("SRR453082", "Ovary")
++ strain("SRR453082", "C57BL/6J")
++ age("SRR453082", "Weeks 8")
+
++ source("SRR453083", "Ovary")
++ strain("SRR453083", "C57BL/6J")
++ age("SRR453083", "Weeks 8")
+
++ source("SRR453084", "Ovary")
++ strain("SRR453084", "C57BL/6J")
++ age("SRR453084", "Weeks 8")
+
++ source("SRR453085", "Ovary")
++ strain("SRR453085", "C57BL/6J")
++ age("SRR453085", "Weeks 8")
+
++ source("SRR453086", "Ovary")
++ strain("SRR453086", "C57BL/6J")
++ age("SRR453086", "Weeks 8")
+
++ source("SRR453088", "Breast")
++ strain("SRR453088", "C57BL/6J")
++ age("SRR453088", "Weeks 8")
+
++ source("SRR453089", "Breast")
++ strain("SRR453089", "C57BL/6J")
++ age("SRR453089", "Weeks 8")
+
++ source("SRR453090", "Breast")
++ strain("SRR453090", "C57BL/6J")
++ age("SRR453090", "Weeks 8")
+
++ source("SRR453092", "Breast")
++ strain("SRR453092", "C57BL/6J")
++ age("SRR453092", "Weeks 8")
+
++ source("SRR453116", "Adrenal")
++ strain("SRR453116", "C57BL/6J")
++ age("SRR453116", "Weeks 8")
+
++ source("SRR453117", "Adrenal")
++ strain("SRR453117", "C57BL/6J")
++ age("SRR453117", "Weeks 8")
+
++ source("SRR453118", "Adrenal")
++ strain("SRR453118", "C57BL/6J")
++ age("SRR453118", "Weeks 8")
+
++ source("SRR453119", "Adrenal")
++ strain("SRR453119", "C57BL/6J")
++ age("SRR453119", "Weeks 8")
+
++ source("SRR453120", "Adrenal")
++ strain("SRR453120", "C57BL/6J")
++ age("SRR453120", "Weeks 8")
+
++ source("SRR453121", "Adrenal")
++ strain("SRR453121", "C57BL/6J")
++ age("SRR453121", "Weeks 8")
+
++ source("SRR453130", "Adipose")
++ strain("SRR453130", "C57BL/6J")
++ age("SRR453130", "Weeks 8")
+
++ source("SRR453133", "Adipose")
++ strain("SRR453133", "C57BL/6J")
++ age("SRR453133", "Weeks 8")
+
++ source("SRR453140", "Testis")
++ strain("SRR453140", "C57BL/6J")
++ sex("SRR453140", "Male")
++ age("SRR453140", "Weeks 8")
+
++ source("SRR453142", "Testis")
++ strain("SRR453142", "C57BL/6J")
++ sex("SRR453142", "Male")
++ age("SRR453142", "Weeks 8")
+
++ source("SRR453143", "Testis")
++ strain("SRR453143", "C57BL/6J")
++ sex("SRR453143", "Male")
++ age("SRR453143", "Weeks 8")
+
++ source("SRR453144", "Kidney")
++ strain("SRR453144", "C57BL/6J")
++ age("SRR453144", "Weeks 8")
+
++ source("SRR453145", "Kidney")
++ strain("SRR453145", "C57BL/6J")
++ age("SRR453145", "Weeks 8")
+
++ source("SRR453146", "Kidney")
++ strain("SRR453146", "C57BL/6J")
++ age("SRR453146", "Weeks 8")
+
++ source("SRR453147", "Kidney")
++ strain("SRR453147", "C57BL/6J")
++ age("SRR453147", "Weeks 8")
+
++ source("SRR453148", "Kidney")
++ strain("SRR453148", "C57BL/6J")
++ age("SRR453148", "Weeks 8")
+
++ source("SRR453149", "Kidney")
++ strain("SRR453149", "C57BL/6J")
++ age("SRR453149", "Weeks 8")
+
++ source("SRR453150", "Liver")
++ strain("SRR453150", "C57BL/6J")
++ age("SRR453150", "Weeks 8")
+
++ source("SRR453151", "Liver")
++ strain("SRR453151", "C57BL/6J")
++ age("SRR453151", "Weeks 8")
+
++ source("SRR453152", "Liver")
++ strain("SRR453152", "C57BL/6J")
++ age("SRR453152", "Weeks 8")
+
++ source("SRR453155", "Liver")
++ strain("SRR453155", "C57BL/6J")
++ age("SRR453155", "Weeks 8")
+
++ source("SRR453158", "Lung")
++ strain("SRR453158", "C57BL/6J")
++ age("SRR453158", "Weeks 8")
+
++ source("SRR453159", "Lung")
++ strain("SRR453159", "C57BL/6J")
++ age("SRR453159", "Weeks 8")
+
++ source("SRR453166", "Colon")
++ strain("SRR453166", "C57BL/6J")
++ age("SRR453166", "Weeks 8")
+
++ source("SRR453167", "Colon")
++ strain("SRR453167", "C57BL/6J")
++ age("SRR453167", "Weeks 8")
+
++ source("SRR453168", "Colon")
++ strain("SRR453168", "C57BL/6J")
++ age("SRR453168", "Weeks 8")
+
++ source("SRR453169", "Colon")
++ strain("SRR453169", "C57BL/6J")
++ age("SRR453169", "Weeks 8")
+
++ source("SRR453170", "Colon")
++ strain("SRR453170", "C57BL/6J")
++ age("SRR453170", "Weeks 8")
+
++ source("SRR453171", "Colon")
++ strain("SRR453171", "C57BL/6J")
++ age("SRR453171", "Weeks 8")
+
++ source("SRR453172", "Heart")
++ strain("SRR453172", "C57BL/6J")
++ age("SRR453172", "Weeks 8")
+
++ source("SRR453173", "Heart")
++ strain("SRR453173", "C57BL/6J")
++ age("SRR453173", "Weeks 8")
+
++ source("SRR453175", "Heart")
++ strain("SRR453175", "C57BL/6J")
++ age("SRR453175", "Weeks 8")
+
++ source("SRR496225", "Kidney")
++ strain("SRR496225", "C57BL/6")
++ sex("SRR496225", "Male")
++ age("SRR496225", "Weeks 8")
+
++ source("SRR496226", "Kidney")
++ strain("SRR496226", "C57BL/6")
++ sex("SRR496226", "Male")
++ age("SRR496226", "Weeks 8")
+
++ source("SRR537114", "Kidney")
++ age("SRR537114", "Adult")
+
++ source("SRR537115", "Kidney")
++ age("SRR537115", "Adult")
+
++ source("SRR537124", "Kidney")
++ age("SRR537124", "Weeks 15")
+
++ source("SRR537125", "Kidney")
++ age("SRR537125", "Weeks 15")
+
++ source("SRR537126", "Kidney")
++ age("SRR537126", "Weeks 14")
+
++ source("SRR567483", "Bladder")
++ strain("SRR567483", "C57BL/6J")
++ age("SRR567483", "Weeks 8")
+
++ source("SRR567484", "Placenta")
++ strain("SRR567484", "C57BL/6J")
++ age("SRR567484", "Weeks 8")
+
++ source("SRR567485", "Placenta")
++ strain("SRR567485", "C57BL/6J")
++ age("SRR567485", "Weeks 8")
+
++ source("SRR567487", "Liver")
++ strain("SRR567487", "C57BL/6J")
++ age("SRR567487", "E18")
+
++ source("SRR567496", "Liver")
++ strain("SRR567496", "C57BL/6J")
++ age("SRR567496", "E14.5")
+
++ source("SRR567497", "Liver")
++ strain("SRR567497", "C57BL/6J")
++ age("SRR567497", "E14.5")
+
++ source("SRR567498", "Brain")
++ strain("SRR567498", "C57BL/6J")
++ age("SRR567498", "E14.5")
+
++ source("SRR567499", "Brain")
++ strain("SRR567499", "C57BL/6J")
++ age("SRR567499", "E14.5")
+
++ source("SRR567502", "Liver")
++ strain("SRR567502", "C57BL/6J")
++ age("SRR567502", "E14")
+
++ source("SRR567503", "Liver")
++ strain("SRR567503", "C57BL/6J")
++ age("SRR567503", "E14")
+
++ source("SRR579548", "Kidney")
++ strain("SRR579548", "C57BL/6")
++ age("SRR579548", "Adult")
+
++ source("SRR594396", "Kidney")
++ strain("SRR594396", "DBA/2J")
+
++ source("SRR594404", "Kidney")
++ strain("SRR594404", "C57BL/6")
+
++ source("SRR594413", "Kidney")
++ strain("SRR594413", "CD-1")
+
++ source("SRR636916", "Kidney")
++ age("SRR636916", "Adult")
+
++ source("SRR636917", "Kidney")
++ age("SRR636917", "Adult")
+
++ source("SRR636918", "Kidney")
++ age("SRR636918", "Adult")
+
++ source("SRR649362", "Testis")
++ sex("SRR649362", "Male")
++ age("SRR649362", "Years 51")
+
++ source("SRR649364", "Ovary")
++ sex("SRR649364", "Female")
++ age("SRR649364", "Years 47")
+
++ source("SRR649372", "Ovary")
++ strain("SRR649372", "C57BL/6")
++ sex("SRR649372", "Female")
++ age("SRR649372", "Adult")
+
++ source("SRR649373", "Placenta")
++ strain("SRR649373", "C57BL/6")
++ sex("SRR649373", "Female")
++ age("SRR649373", "E16.5")
+
++ source("SRR649374", "Placenta")
++ strain("SRR649374", "C57BL/6")
++ sex("SRR649374", "Male")
++ age("SRR649374", "E10.5")
+
++ source("SRR649375", "Testis")
++ strain("SRR649375", "C57BL/6")
++ sex("SRR649375", "Male")
++ age("SRR649375", "Adult")
+
++ source("SRR771547", "HEK-293T Cells")
++ isolatedfrom("SRR771547", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771548", "HEK-293T Cells")
++ isolatedfrom("SRR771548", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771549", "HEK-293T Cells")
++ isolatedfrom("SRR771549", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771550", "HEK-293T Cells")
++ isolatedfrom("SRR771550", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771551", "HEK-293T Cells")
++ isolatedfrom("SRR771551", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771552", "HEK-293T Cells")
++ isolatedfrom("SRR771552", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771553", "HEK-293T Cells")
++ isolatedfrom("SRR771553", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771554", "HEK-293T Cells")
++ isolatedfrom("SRR771554", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771555", "HEK-293T Cells")
++ isolatedfrom("SRR771555", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771556", "HEK-293T Cells")
++ isolatedfrom("SRR771556", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771557", "HEK-293T Cells")
++ isolatedfrom("SRR771557", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR771558", "HEK-293T Cells")
++ isolatedfrom("SRR771558", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR786444", "Kidney Cortex")
++ strain("SRR786444", "C57BL/6")
++ sex("SRR786444", "Male")
+
++ source("SRR786445", "Kidney Cortex")
++ strain("SRR786445", "C57BL/6")
++ sex("SRR786445", "Male")
+
++ source("SRR786446", "Kidney Cortex")
++ strain("SRR786446", "C57BL/6")
++ sex("SRR786446", "Male")
+
++ source("SRR786447", "Kidney Cortex")
++ strain("SRR786447", "C57BL/6")
++ sex("SRR786447", "Male")
+
++ source("SRR786448", "Kidney Cortex")
++ strain("SRR786448", "C57BL/6")
++ sex("SRR786448", "Male")
+
++ source("SRR786449", "Kidney Cortex")
++ strain("SRR786449", "C57BL/6")
++ sex("SRR786449", "Male")
+
++ source("SRR786450", "Kidney Cortex")
++ strain("SRR786450", "C57BL/6")
++ sex("SRR786450", "Male")
+
++ source("SRR786451", "Kidney Cortex")
++ strain("SRR786451", "C57BL/6")
++ sex("SRR786451", "Male")
+
++ source("SRR786452", "Kidney Cortex")
++ strain("SRR786452", "C57BL/6")
++ sex("SRR786452", "Male")
+
++ source("SRR786453", "Kidney Cortex")
++ strain("SRR786453", "C57BL/6")
++ sex("SRR786453", "Male")
+
++ source("SRR786454", "Kidney Cortex")
++ strain("SRR786454", "C57BL/6")
++ sex("SRR786454", "Male")
+
++ source("SRR786455", "Kidney Cortex")
++ strain("SRR786455", "C57BL/6")
++ sex("SRR786455", "Male")
+
++ source("SRR786456", "Kidney Cortex")
++ strain("SRR786456", "C57BL/6")
++ sex("SRR786456", "Male")
+
++ source("SRR786457", "Kidney Cortex")
++ strain("SRR786457", "C57BL/6")
++ sex("SRR786457", "Male")
+
++ source("SRR786458", "Kidney Cortex")
++ strain("SRR786458", "C57BL/6")
++ sex("SRR786458", "Male")
+
++ source("SRR786459", "Kidney Cortex")
++ strain("SRR786459", "C57BL/6")
++ sex("SRR786459", "Male")
+
++ source("SRR786460", "Kidney Cortex")
++ strain("SRR786460", "C57BL/6")
++ sex("SRR786460", "Male")
+
++ source("SRR786461", "Kidney Cortex")
++ strain("SRR786461", "C57BL/6")
++ sex("SRR786461", "Male")
+
++ source("SRR786462", "Kidney Cortex")
++ strain("SRR786462", "C57BL/6")
++ sex("SRR786462", "Male")
+
++ source("SRR786463", "Kidney Cortex")
++ strain("SRR786463", "C57BL/6")
++ sex("SRR786463", "Male")
+
++ source("SRR786464", "Kidney Cortex")
++ strain("SRR786464", "C57BL/6")
++ sex("SRR786464", "Male")
+
++ source("SRR786465", "Kidney Cortex")
++ strain("SRR786465", "C57BL/6")
++ sex("SRR786465", "Male")
+
++ source("SRR786466", "Kidney Cortex")
++ strain("SRR786466", "C57BL/6")
++ sex("SRR786466", "Male")
+
++ source("SRR786468", "Kidney Cortex")
++ strain("SRR786468", "C57BL/6")
++ sex("SRR786468", "Male")
+
++ source("SRR786469", "Kidney Cortex")
++ strain("SRR786469", "C57BL/6")
++ sex("SRR786469", "Male")
+
++ source("SRR786470", "Kidney Cortex")
++ strain("SRR786470", "C57BL/6")
++ sex("SRR786470", "Male")
+
++ source("SRR786471", "Kidney Cortex")
++ strain("SRR786471", "C57BL/6")
++ sex("SRR786471", "Male")
+
++ source("SRR786472", "Kidney Cortex")
++ strain("SRR786472", "C57BL/6")
++ sex("SRR786472", "Male")
+
++ source("SRR786473", "Kidney Cortex")
++ strain("SRR786473", "C57BL/6")
++ sex("SRR786473", "Male")
+
++ source("SRR786474", "Kidney Cortex")
++ strain("SRR786474", "C57BL/6")
++ sex("SRR786474", "Male")
+
++ source("SRR786475", "Kidney Cortex")
++ strain("SRR786475", "C57BL/6")
++ sex("SRR786475", "Male")
+
++ source("SRR786476", "Kidney Cortex")
++ strain("SRR786476", "C57BL/6")
++ sex("SRR786476", "Male")
+
++ source("SRR786477", "Kidney Cortex")
++ strain("SRR786477", "C57BL/6")
++ sex("SRR786477", "Male")
+
++ source("SRR786478", "Kidney Cortex")
++ strain("SRR786478", "C57BL/6")
++ sex("SRR786478", "Male")
+
++ source("SRR786479", "Kidney Cortex")
++ strain("SRR786479", "C57BL/6")
++ sex("SRR786479", "Male")
+
++ source("SRR786480", "Kidney Cortex")
++ strain("SRR786480", "C57BL/6")
++ sex("SRR786480", "Male")
+
++ source("SRR786481", "Kidney Cortex")
++ strain("SRR786481", "C57BL/6")
++ sex("SRR786481", "Male")
+
++ source("SRR786482", "Kidney Cortex")
++ strain("SRR786482", "C57BL/6")
++ sex("SRR786482", "Male")
+
++ source("SRR786483", "Kidney Cortex")
++ strain("SRR786483", "C57BL/6")
++ sex("SRR786483", "Male")
+
++ source("SRR786484", "Kidney Cortex")
++ strain("SRR786484", "C57BL/6")
++ sex("SRR786484", "Male")
+
++ source("SRR786485", "Kidney Cortex")
++ strain("SRR786485", "C57BL/6")
++ sex("SRR786485", "Male")
+
++ source("SRR786486", "Kidney Cortex")
++ strain("SRR786486", "C57BL/6")
++ sex("SRR786486", "Male")
+
++ source("SRR787270", "Bladder")
+
++ source("SRR787271", "Brain")
+
++ source("SRR787272", "Breast")
+
++ source("SRR787273", "Colon")
+
++ source("SRR787274", "Heart")
+
++ source("SRR787275", "Kidney")
+
++ source("SRR787276", "Liver")
+
++ source("SRR787277", "Lung")
+
++ source("SRR787278", "Muscle")
+
++ source("SRR787279", "Ovary")
+
++ source("SRR891495", "Heart")
++ age("SRR891495", "Adult")
+
++ source("SRR891504", "Liver")
++ age("SRR891504", "Adult")
+
++ source("SRR891510", "Muscle")
++ age("SRR891510", "Adult")
+
++ source("SRR891511", "Brain")
++ age("SRR891511", "Adult")
+
++ source("SRR943340", "Placenta")
++ sex("SRR943340", "Female")
++ age("SRR943340", "Weeks 42")
+
++ source("SRR943341", "Ovary")
++ sex("SRR943341", "Female")
+
++ source("SRR943342", "Ovary")
++ strain("SRR943342", "C57BL/6")
++ sex("SRR943342", "Female")
++ age("SRR943342", "Weeks 16")
+
++ source("SRR943343", "Ovary")
++ strain("SRR943343", "C57BL/6")
++ sex("SRR943343", "Female")
++ age("SRR943343", "Weeks 16")
+
++ source("SRR943344", "Placenta")
++ strain("SRR943344", "CD-1")
++ age("SRR943344", "E10.5")
+
++ source("SRR943359", "Placenta")
++ sex("SRR943359", "Male")
++ age("SRR943359", "Weeks 42")
+
++ source("SRR945202", "Kidney")
++ strain("SRR945202", "C57BL/6")
++ sex("SRR945202", "Female")
+
++ source("SRR945203", "Kidney")
++ strain("SRR945203", "C57BL/6")
++ sex("SRR945203", "Female")
+
++ source("SRR945204", "Kidney")
++ strain("SRR945204", "C57BL/6")
++ sex("SRR945204", "Male")
+
++ source("SRR945205", "Kidney")
++ strain("SRR945205", "C57BL/6")
++ sex("SRR945205", "Male")
+
++ source("SRR945206", "Kidney")
++ strain("SRR945206", "C57BL/6")
++ sex("SRR945206", "Female")
+
++ source("SRR945207", "Kidney")
++ strain("SRR945207", "C57BL/6")
++ sex("SRR945207", "Female")
+
++ source("SRR945208", "Kidney")
++ strain("SRR945208", "C57BL/6")
++ sex("SRR945208", "Male")
+
++ source("SRR945209", "Kidney")
++ strain("SRR945209", "C57BL/6")
++ sex("SRR945209", "Male")
+
++ source("SRR945210", "Kidney")
++ strain("SRR945210", "C57BL/6")
++ sex("SRR945210", "Male")
+
++ source("SRR945211", "Kidney")
++ strain("SRR945211", "C57BL/6")
++ sex("SRR945211", "Male")
+
++ source("SRR945212", "Kidney")
++ strain("SRR945212", "C57BL/6")
++ sex("SRR945212", "Male")
+
++ source("SRR945213", "Kidney")
++ strain("SRR945213", "C57BL/6")
++ sex("SRR945213", "Male")
+
++ source("SRR945382", "Kidney")
++ strain("SRR945382", "C57BL/6")
++ sex("SRR945382", "Male")
+
++ source("SRR945383", "Kidney")
++ strain("SRR945383", "C57BL/6")
++ sex("SRR945383", "Male")
+
++ source("SRR945384", "Kidney")
++ strain("SRR945384", "C57BL/6")
++ sex("SRR945384", "Female")
+
++ source("SRR945385", "Kidney")
++ strain("SRR945385", "C57BL/6")
++ sex("SRR945385", "Female")
+
++ source("SRR945387", "Kidney")
++ strain("SRR945387", "C57BL/6")
++ sex("SRR945387", "Male")
+
++ source("SRR945388", "Kidney")
++ strain("SRR945388", "C57BL/6")
++ sex("SRR945388", "Male")
+
++ source("SRR945389", "Kidney")
++ strain("SRR945389", "C57BL/6")
++ sex("SRR945389", "Male")
+
++ source("SRR945390", "Kidney")
++ strain("SRR945390", "C57BL/6")
++ sex("SRR945390", "Female")
+
++ source("SRR945391", "Kidney")
++ strain("SRR945391", "C57BL/6")
++ sex("SRR945391", "Female")
+
++ source("SRR945392", "Kidney")
++ strain("SRR945392", "C57BL/6")
++ sex("SRR945392", "Female")
+
++ source("SRR945393", "Kidney")
++ strain("SRR945393", "C57BL/6")
++ sex("SRR945393", "Female")
+
++ source("SRR960456", "HEK-293F Cells")
++ isolatedfrom("SRR960456", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960457", "HEK-293F Cells")
++ isolatedfrom("SRR960457", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960458", "HEK-293F Cells")
++ isolatedfrom("SRR960458", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960459", "HEK-293F Cells")
++ isolatedfrom("SRR960459", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960460", "HEK-293F Cells")
++ isolatedfrom("SRR960460", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960461", "HEK-293F Cells")
++ isolatedfrom("SRR960461", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960462", "HEK-293F Cells")
++ isolatedfrom("SRR960462", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960463", "HEK-293F Cells")
++ isolatedfrom("SRR960463", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960464", "HEK-293F Cells")
++ isolatedfrom("SRR960464", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960465", "HEK-293F Cells")
++ isolatedfrom("SRR960465", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960466", "HEK-293F Cells")
++ isolatedfrom("SRR960466", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960467", "HEK-293F Cells")
++ isolatedfrom("SRR960467", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960468", "HEK-293F Cells")
++ isolatedfrom("SRR960468", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960469", "HEK-293F Cells")
++ isolatedfrom("SRR960469", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR960470", "HEK-293F Cells")
++ isolatedfrom("SRR960470", "HEK-293F Cells", "Embryonic Kidney")
+
++ source("SRR965314", "HEK-293T Cells")
++ isolatedfrom("SRR965314", "HEK-293T Cells", "Embryonic Kidney")
+
++ source("SRR976235", "Kidney")
++ sex("SRR976235", "Male")
++ age("SRR976235", "Years 22")
+
++ source("SRR976236", "Kidney")
++ sex("SRR976236", "Male")
++ age("SRR976236", "Years 67.5")
+
++ source("SRR976237", "Kidney")
++ sex("SRR976237", "Male")
++ age("SRR976237", "Years 45")
+
++ source("SRR1609747", "Kidney")
++ age("SRR1609747", "Weeks 24")
+
++ source("SRR1609748", "Kidney")
++ age("SRR1609748", "Weeks 24")
+
++ source("SRR1609749", "Kidney")
++ age("SRR1609749", "Weeks 24")
+

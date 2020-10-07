@@ -1,0 +1,162 @@
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 5
+Rules claiming more threads will be scaled down.
+Job counts:
+	count	jobs
+	8	STAR_align
+	1	all
+	8	downloadseqdata
+	8	fastqdump
+	8	getmetadata
+	8	makeHTSeqTables
+	41
+
+[Wed Aug 12 15:44:22 2020]
+rule getmetadata:
+    output: METADATA/GSE112866.json
+    jobid: 19
+    wildcards: sample=GSE112866
+
+[Wed Aug 12 15:44:22 2020]
+rule getmetadata:
+    output: METADATA/GSE112330.json
+    jobid: 9
+    wildcards: sample=GSE112330
+
+[Wed Aug 12 15:44:22 2020]
+rule getmetadata:
+    output: METADATA/GSE102683.json
+    jobid: 21
+    wildcards: sample=GSE102683
+
+[Wed Aug 12 15:44:22 2020]
+rule getmetadata:
+    output: METADATA/GSE68108.json
+    jobid: 17
+    wildcards: sample=GSE68108
+
+[Wed Aug 12 15:44:22 2020]
+rule getmetadata:
+    output: METADATA/GSE129457.json
+    jobid: 23
+    wildcards: sample=GSE129457
+
+[33mJob counts:
+	count	jobs
+	1	getmetadata
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	getmetadata
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	getmetadata
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	getmetadata
+	1[0m
+[33mJob counts:
+	count	jobs
+	1	getmetadata
+	1[0m
+[32m[Wed Aug 12 15:46:43 2020][0m
+[31mError in rule getmetadata:[0m
+[31m    jobid: 0[0m
+[31m    output: METADATA/GSE68108.json[0m
+[31m[0m
+[31mRuleException:
+URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+<urlopen error [Errno 101] Network is unreachable>
+  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
+  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
+  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+[31mExiting because a job execution failed. Look above for error message[0m
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE68108
+[32m[Wed Aug 12 15:46:45 2020][0m
+[31mError in rule getmetadata:[0m
+[31m    jobid: 0[0m
+[31m    output: METADATA/GSE112866.json[0m
+[31m[0m
+[31mRuleException:
+URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+<urlopen error [Errno 101] Network is unreachable>
+  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
+  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
+  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+[31mExiting because a job execution failed. Look above for error message[0m
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE112866
+[32m[Wed Aug 12 15:46:46 2020][0m
+[31mError in rule getmetadata:[0m
+[31m    jobid: 0[0m
+[31m    output: METADATA/GSE129457.json[0m
+[31m[0m
+[31mRuleException:
+URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+<urlopen error [Errno 101] Network is unreachable>
+  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
+  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
+  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+[31mExiting because a job execution failed. Look above for error message[0m
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE129457
+[32m[Wed Aug 12 15:46:47 2020][0m
+[31mError in rule getmetadata:[0m
+[31m    jobid: 0[0m
+[31m    output: METADATA/GSE102683.json[0m
+[31m[0m
+[31mRuleException:
+URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+<urlopen error [Errno 101] Network is unreachable>
+  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
+  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
+  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+[31mExiting because a job execution failed. Look above for error message[0m
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE102683
+[32m[Wed Aug 12 15:46:50 2020][0m
+[31mError in rule getmetadata:[0m
+[31m    jobid: 0[0m
+[31m    output: METADATA/GSE112330.json[0m
+[31m[0m
+[31mRuleException:
+URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
+<urlopen error [Errno 101] Network is unreachable>
+  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
+  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
+  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
+  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
+[31mExiting because a job execution failed. Look above for error message[0m
+http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE112330
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look above for error message
+Complete log: /home/kasper/renaldb/Step_1_Assembly/.snakemake/log/2020-08-12T154422.414187.snakemake.log

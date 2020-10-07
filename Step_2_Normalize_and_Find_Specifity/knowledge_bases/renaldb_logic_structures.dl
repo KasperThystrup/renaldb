@@ -1,0 +1,93 @@
+organism(TaxID)
+
+
+sex(SRA_ID, Gender)
+
+
+tissue(TissueName)
+doesnotcontain(X,Y)
+isakindof(SpecificType, GeneralType)
+doesnotcontain(ChildNotIn, ParentTissue)
+expression(Sequence, Experiment, Exp_Val)
+source(SRA_ID, SourceName)
+
+
+contains(ParentTissue, ChildTissue)
+contains(ParentTissue, SubChildTissue) <= contains(ParentTissue, ChildTissue) & contains(ChildTissue, SubChildTissue)
+
+developsfrom(Successor, Precursor)
+developsfrom(Successor, PrePrecursor)  <= developsfrom(Successor, Precursor) & developsfrom(Precursor, PrePrecursor)
+
+
+# Tree rel needs a parent
+# treerel(ParentTissue, ChildTissue, RelType)
+treerel(ParentTissue, ChildTissue, "contains")     <= (contains(ParentTissue, ChildTissue))
+treerel(ParentTissue, ChildTissue, "developsfrom") <= (developsfrom(ParentTissue, ChildTissue))
+
+treerel(ParentTissue, ChildTissue, RelType) <= (
+  treerel(ParentTissue, MidTissue,   RelType)
+& treerel(MidTissue,    ChildTissue, AnyRelType)
+
+)
+
+
+metadata(SRA_ID, AttributeType, Value) <=  age(SRA_ID, Value)       & (AttributeType=="age")
+metadata(SRA_ID, AttributeType, Value) <=  sex(SRA_ID, Value)       & (AttributeType=="sex")
+metadata(SRA_ID, AttributeType, Value) <=  strain(SRA_ID, Value)    & (AttributeType=="strain")
+
+
+#treerel(ParentTissue, ChildTissue, "developsfrom") <= (
+#    developsfrom(ParentTissue, MidTissue)
+#    & contains(MidTissue, ChildTissue)
+#)
+
+# Count the number of Successors given a with any type of relation, given a precursor.
+(treesuccessorcount[Precursor, RelType]==len_(Successor)) <= treerel(Successor, Precursor, AnyRelType)
+
+
+#Handle middle cases
+containsordevelopswithtcount(ParentTissue, ChildTissue, Count, RelType) <= (
+  treerel(ParentTissue, ChildTissue, RelType)
+  & (treesuccessorcount[ParentTissue, RelType]==Count)
+)
+
+#Handle first and last cases.
+#containsordevelopswithtcount(ParentTissue, ChildTissue, Count, RelType) <= (
+#    (ParentTissue==ChildTissue)
+#    & (treesuccessorcount[ParentTissue, AnyRelType]==Count)
+#)
+
+
+expressedin(Sequence, Source) <= (
+    source(Experiment, Source) &
+    expression(Sequence, Experiment, Exp_Val)
+)
+expressedin(Sequence, Source) <= (
+    source(Experiment, Source_1) &
+    expression(Sequence, Experiment, Exp_Val) &
+    contains(Source, Source_1) &
+    ~taxid(Source)
+)
+
+(averageexpression[Sequence]==mean_(Exp_Val, for_each=Experiment)) <= expression(Sequence, Experiment, Exp_Val)
+
+enrichedin(Sequence, Source) <= (
+    source(Experiment, Source)
+    & expression(Sequence, Experiment, Exp_Val)
+    & (Exp_Val > averageexpression[Sequence])
+)
+
+(expressioncount[Experiment]==len_(Experiment)) <= expression(Sequence, Experiment, Exp_Val)
+
+specificto(Sequence, Source) <= (
+    source(Experiment, Source)
+    & expressedin(Sequence, Source)
+    & expressedin(Sequence, Source_1)
+    & expression(Sequence, Experiment, Exp_Val)
+)
+sourceandparents(Experiment, Source) <= source(Experiment, Source)
+sourceandparents(Experiment, Source) <= source(Experiment, Source_1) & contains(Source, Source_1) & ~taxid(Source)
+
+
+
+
