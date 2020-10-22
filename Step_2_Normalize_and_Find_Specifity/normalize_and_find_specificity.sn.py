@@ -38,7 +38,7 @@ SPECIFICTY_TABLE_FILES  = "{seq_type}_{tax_id}_specificity_table.tsv"
 
 # Build targets --------------------------------------------------------------
 seq_types = ["genes", "transcripts"]
-tax_ids   = ["7955", "9606", "10090"]
+tax_ids   = ["9606"]
 
 
 # The end result is two tables, that will be inserted into the relational database.

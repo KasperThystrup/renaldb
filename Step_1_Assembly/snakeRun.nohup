@@ -1,162 +1,78 @@
 Building DAG of jobs...
 Using shell: /bin/bash
-Provided cores: 5
+Provided cores: 36
 Rules claiming more threads will be scaled down.
 Job counts:
 	count	jobs
-	8	STAR_align
+	1	STAR_align
 	1	all
-	8	downloadseqdata
-	8	fastqdump
-	8	getmetadata
-	8	makeHTSeqTables
-	41
+	1	fastqdump
+	1	makeHTSeqTables
+	4
 
-[Wed Aug 12 15:44:22 2020]
-rule getmetadata:
-    output: METADATA/GSE112866.json
-    jobid: 19
-    wildcards: sample=GSE112866
-
-[Wed Aug 12 15:44:22 2020]
-rule getmetadata:
-    output: METADATA/GSE112330.json
-    jobid: 9
-    wildcards: sample=GSE112330
-
-[Wed Aug 12 15:44:22 2020]
-rule getmetadata:
-    output: METADATA/GSE102683.json
-    jobid: 21
-    wildcards: sample=GSE102683
-
-[Wed Aug 12 15:44:22 2020]
-rule getmetadata:
-    output: METADATA/GSE68108.json
-    jobid: 17
-    wildcards: sample=GSE68108
-
-[Wed Aug 12 15:44:22 2020]
-rule getmetadata:
-    output: METADATA/GSE129457.json
-    jobid: 23
-    wildcards: sample=GSE129457
+[Wed Oct 21 14:08:34 2020]
+rule fastqdump:
+    input: SRAs/SRR12845350.sra, METADATA/SRR12845350.json
+    output: FASTQs/SRR12845350_1.fastq, FASTQs/SRR12845350_2.fastq
+    jobid: 8
+    wildcards: sample=SRR12845350
 
 [33mJob counts:
 	count	jobs
-	1	getmetadata
+	1	fastqdump
 	1[0m
+Read 2232906 spots for SRAs/SRR12845350.sra
+Written 2232906 spots for SRAs/SRR12845350.sra
+[Wed Oct 21 14:09:21 2020]
+Finished job 8.
+1 of 4 steps (25%) done
+
+[Wed Oct 21 14:09:21 2020]
+rule STAR_align:
+    input: METADATA/SRR12845350.json, FASTQs/SRR12845350_1.fastq, FASTQs/SRR12845350_2.fastq
+    output: STAR_ASSEMBLIES/SRR12845350/sample_Aligned.sortedByCoord.out.bam, STAR_ASSEMBLIES/SRR12845350/sample_Aligned.toTranscriptome.out.bam, STAR_ASSEMBLIES/SRR12845350/sample_Chimeric.out.junction, STAR_ASSEMBLIES/SRR12845350/sample_Log.final.out, STAR_ASSEMBLIES/SRR12845350/sample_Log.out, STAR_ASSEMBLIES/SRR12845350/sample_Log.progress.out, STAR_ASSEMBLIES/SRR12845350/sample_SJ.out.tab
+    jobid: 6
+    wildcards: sample=SRR12845350
+
 [33mJob counts:
 	count	jobs
-	1	getmetadata
+	1	STAR_align
 	1[0m
+Oct 21 14:10:11 ..... started STAR run
+Oct 21 14:10:11 ..... loading genome
+Oct 21 14:10:26 ..... started mapping
+Oct 21 14:12:22 ..... finished mapping
+Oct 21 14:12:24 ..... started sorting BAM
+Oct 21 14:12:33 ..... finished successfully
+-rw-rw-r-- 1 kasper kasper 330733690 Oct 21 14:12 STAR_ASSEMBLIES/SRR12845350/sample_Aligned.sortedByCoord.out.bam
+Removing temporary output file FASTQs/SRR12845350_1.fastq.
+Removing temporary output file FASTQs/SRR12845350_2.fastq.
+[Wed Oct 21 14:12:34 2020]
+Finished job 6.
+2 of 4 steps (50%) done
+
+[Wed Oct 21 14:12:34 2020]
+rule makeHTSeqTables:
+    input: METADATA/SRR12845350.json, STAR_ASSEMBLIES/SRR12845350/sample_Aligned.sortedByCoord.out.bam, STAR_ASSEMBLIES/SRR12845350/sample_Aligned.toTranscriptome.out.bam
+    output: HTSeqTables/SRR12845350.genes.tsv, HTSeqTables/SRR12845350.transcripts.tsv
+    jobid: 2
+    wildcards: sample=SRR12845350
+
 [33mJob counts:
 	count	jobs
-	1	getmetadata
+	1	makeHTSeqTables
 	1[0m
-[33mJob counts:
-	count	jobs
-	1	getmetadata
-	1[0m
-[33mJob counts:
-	count	jobs
-	1	getmetadata
-	1[0m
-[32m[Wed Aug 12 15:46:43 2020][0m
-[31mError in rule getmetadata:[0m
-[31m    jobid: 0[0m
-[31m    output: METADATA/GSE68108.json[0m
-[31m[0m
-[31mRuleException:
-URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
-<urlopen error [Errno 101] Network is unreachable>
-  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
-  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
-  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
-[31mExiting because a job execution failed. Look above for error message[0m
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE68108
-[32m[Wed Aug 12 15:46:45 2020][0m
-[31mError in rule getmetadata:[0m
-[31m    jobid: 0[0m
-[31m    output: METADATA/GSE112866.json[0m
-[31m[0m
-[31mRuleException:
-URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
-<urlopen error [Errno 101] Network is unreachable>
-  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
-  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
-  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
-[31mExiting because a job execution failed. Look above for error message[0m
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE112866
-[32m[Wed Aug 12 15:46:46 2020][0m
-[31mError in rule getmetadata:[0m
-[31m    jobid: 0[0m
-[31m    output: METADATA/GSE129457.json[0m
-[31m[0m
-[31mRuleException:
-URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
-<urlopen error [Errno 101] Network is unreachable>
-  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
-  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
-  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
-[31mExiting because a job execution failed. Look above for error message[0m
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE129457
-[32m[Wed Aug 12 15:46:47 2020][0m
-[31mError in rule getmetadata:[0m
-[31m    jobid: 0[0m
-[31m    output: METADATA/GSE102683.json[0m
-[31m[0m
-[31mRuleException:
-URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
-<urlopen error [Errno 101] Network is unreachable>
-  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
-  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
-  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
-[31mExiting because a job execution failed. Look above for error message[0m
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE102683
-[32m[Wed Aug 12 15:46:50 2020][0m
-[31mError in rule getmetadata:[0m
-[31m    jobid: 0[0m
-[31m    output: METADATA/GSE112330.json[0m
-[31m[0m
-[31mRuleException:
-URLError in line 85 of /home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py:
-<urlopen error [Errno 101] Network is unreachable>
-  File "/home/kasper/renaldb/Step_1_Assembly/citkidney_star_align.1.0.sn.py", line 85, in __rule_getmetadata
-  File "/home/kasper/renaldb/Step_1_Assembly/snakelib/getsradata.py", line 55, in SRAXMLToJSON
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 222, in urlopen
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 525, in open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 543, in _open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 503, in _call_chain
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1347, in http_open
-  File "/home/kasper/miniconda3/lib/python3.7/urllib/request.py", line 1321, in do_open
-  File "/home/kasper/miniconda3/lib/python3.7/concurrent/futures/thread.py", line 57, in run[0m
-[31mExiting because a job execution failed. Look above for error message[0m
-http://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=sra&term=GSE112330
-Shutting down, this might take some time.
-Exiting because a job execution failed. Look above for error message
-Complete log: /home/kasper/renaldb/Step_1_Assembly/.snakemake/log/2020-08-12T154422.414187.snakemake.log
+Warning: Mate records missing for 1 records; first such record: <SAM_Alignment object: Paired-end read 'SRR12845350.191594' aligned to 1:[179108743,179108893)/+>.
+[Wed Oct 21 14:32:02 2020]
+Finished job 2.
+3 of 4 steps (75%) done
+
+[Wed Oct 21 14:32:02 2020]
+localrule all:
+    input: HTSeqTables/SRR8094770.genes.tsv, HTSeqTables/SRR12845350.genes.tsv, HTSeqTables/SRR8094770.transcripts.tsv, HTSeqTables/SRR12845350.transcripts.tsv
+    jobid: 0
+
+[Wed Oct 21 14:32:02 2020]
+Finished job 0.
+4 of 4 steps (100%) done
+Complete log: /home/kasper/renaldb/Step_1_Assembly/.snakemake/log/2020-10-21T140834.210000.snakemake.log

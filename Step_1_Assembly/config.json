@@ -1,7 +1,7 @@
 {
     "samples":      "/home/kasper/renaldb/Project/Small_Scale_liver.txt",
     "INDEX_BASE":   "/disk2/Resources/seqDB/ensembl",
-    "VERSION":      "release-97",
+    "VERSION":      "release-100",
     "BASE_PATH":    "/home/kasper/renaldb",
     "PROJECT_PATH": "/home/kasper/renaldb/Project"
 }

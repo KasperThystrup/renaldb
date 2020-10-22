@@ -1,0 +1,27 @@
+{
+    "BioProject": "PRJNA669906",
+    "BioSample": "SAMN16480819",
+    "EXPERIMENT_accession": "SRX9312596",
+    "EXPERIMENT_alias": "190930-07",
+    "INSTRUMENT_MODEL": "Illumina MiSeq",
+    "LAYOUT": "PAIRED",
+    "LIBRARY_SELECTION": "Hybrid Selection",
+    "LIBRARY_STRATEGY": "RNA-Seq",
+    "RUN_accession": "SRR12845350",
+    "SAMPLE_DESCRIPTOR_accession": "SRS7537552",
+    "STUDY_TITLE": "Diagnostic validation of a clinical laboratory-oriented targeted RNA sequencing system for fusion gene detection in hematologic malignancies",
+    "STUDY_accession": "SRP287701",
+    "STUDY_alias": "PRJNA669906",
+    "TAXON_ID": "9606",
+    "ftp_link": "ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByExp/sra/SRX/SRX931/SRX9312596/SRR12845350/SRR12845350.sra",
+    "sample_attribs": {
+        "BioSampleModel": "Human",
+        "age": "31",
+        "biomaterial_provider": "Departments of Laboratory Medicine, Chonnam National University Medical School and Chonnam National University Hwasun Hospital, Hwasun",
+        "cell_line": "BM",
+        "disease": "B-ALL",
+        "isolate": "NS14",
+        "sex": "female",
+        "tissue": "blood"
+    }
+}

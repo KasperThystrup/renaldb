@@ -36,6 +36,9 @@ STAR_FOLDER      = "STAR_ASSEMBLIES/"
 STAR_SAMPLE_DIR  = "{sample}/"
 OUT_PREFIX       = STAR_SAMPLE_DIR + "sample_"
 SAM              = STAR_SAMPLE_DIR + "sample_Aligned.sortedByCoord.out.bam"
+TX_BAM           = STAR_SAMPLE_DIR + "sample_Aligned.toTranscriptome.out.bam"
+TX_BAM_SORTED    = STAR_SAMPLE_DIR + "sample_Aligned.toTranscriptome.sortedByCoord.out.bam"
+CHIM             = STAR_SAMPLE_DIR + "sample_Chimeric.out.junction"
 LOG_OUT_FINAL    = STAR_SAMPLE_DIR + "sample_Log.final.out"
 LOG_OUT          = STAR_SAMPLE_DIR + "sample_Log.out"
 LOG_PROGRESS_OUT = STAR_SAMPLE_DIR + "sample_Log.progress.out"
@@ -163,12 +166,12 @@ rule fastqdump:
             dummy_file_fix = " ; touch {output.fastq_2};"
             shell("/disk2/Resources/software/sratoolkit.2.10.5-centos_linux64/bin/fastq-dump.2.10.5 --split-files -O FASTQs {input.sra} " + dummy_file_fix )
         elif layout == "PAIRED":
-           shell("/disk2/Resources/software/sratoolkit.2.10.5-centos_linux64/bin/fastq-dump.2.10.5 --split-3  -O FASTQs {input.sra}")
+            shell("/disk2/Resources/software/sratoolkit.2.10.5-centos_linux64/bin/fastq-dump.2.10.5 --split-files -O FASTQs {input.sra}")
         
 
 """
 STAR_align runs guided alignments on the fastq files extracted from SRAs. 
-It needs an index file for the guided alignment. So these must be built beforehand 
+It needs an index file for the guided alignment. So these must be built beforehand.
 See the STAR documentation for details. 
 """
 rule STAR_align:
@@ -178,6 +181,8 @@ rule STAR_align:
         second   = FASTQDUMP_FOLDER + FASTQDUMP_FILE_2
     output:
        sam              = STAR_FOLDER + SAM,
+       tx_bam           = temp(STAR_FOLDER + TX_BAM),
+       chim             = STAR_FOLDER + CHIM,
        log_out_final    = STAR_FOLDER + LOG_OUT_FINAL,
        log_out          = STAR_FOLDER + LOG_OUT,
        log_progress_out = STAR_FOLDER + LOG_PROGRESS_OUT,
@@ -201,13 +206,15 @@ rule STAR_align:
         # There are more problems here with file ages, non-used files, etc. So touch all the output files. 
         # Append this to the send of main shell program so if the main program fails the rule will fail. 
         touch_files = """ ; 
-            ls -l {output.sam}; 
+            ls -l {output.sam};
+            touch {output.tx_bam};
+            touch {output.chim};
             touch {output.log_out_final}; 
             touch {output.log_out};  
             touch {output.log_progress_out}; 
             touch {output.out_tab}; """
         
-        # Run STAR    ### Remember chimeric read detection enabled, not tested
+        # Run STAR
         if layout == "SINGLE":
             star_str = """
             /disk2/Resources/software/STAR/bin/Linux_x86_64/STAR --runThreadN 5                            \
@@ -217,6 +224,7 @@ rule STAR_align:
                  --outFileNamePrefix {params.out_dir}/%s   \
                  --chimSegmentMin 20                       \
                  --readFilesIn {input.first} ; ls -l {input.second}""" % (index_str, SAMPLE_PREFIX,)
+                 
         elif layout == "PAIRED":
             star_str = """ 
             /disk2/Resources/software/STAR/bin/Linux_x86_64/STAR --runThreadN 5                            \
@@ -225,12 +233,44 @@ rule STAR_align:
                  --genomeDir %s                            \
                  --outFileNamePrefix {params.out_dir}/%s   \
                  --chimSegmentMin 20                       \
+                 --quantMode TranscriptomeSAM              \
                  --readFilesIn  {input.first} {input.second} """ % (index_str, SAMPLE_PREFIX,)
         else:
             print("ERROR", layout)
         
         shell(star_str + touch_files)
         
+"""
+In case of paired end data, Transcriptome output must be sorted by coordinate,
+as it is a requirement for HTSeq-counts to have data sorted by reads or coordinates
+"""
+rule tx_sort:
+    input:
+        metadata         = METADATA_FOLDER  + METADATA_FILE,
+        tx_bam           = STAR_FOLDER      + TX_BAM
+    output:
+        tx_bam_sorted    = STAR_FOLDER      + TX_BAM_SORTED
+    run:
+
+        # Get metadata about current SRA
+        json_obj = json.load(open(input.metadata))
+        layout = json_obj["LAYOUT"]
+
+        # Run Samtools sort for paired end samples
+        if layout == "SINGLE":
+            sort_str = "touch {output.tx_bam_sorted} ;"
+
+        elif layout == "PAIRED":
+            sort_str = """
+            /disk2/Resources/software/samtools-1.11/bin/samtools sort              \
+            -n                           \
+            -o {output.tx_bam_sorted}    \
+            -O bam                       \
+            {input.tx_bam} """
+        else:
+            print("ERROR", layout)
+
+        shell(sort_str)
 
 """
 makeHTSeqTables extracts counts from the STAR alignment for genes if a sigle end SRA is used, 
@@ -238,11 +278,12 @@ or genes and transcripts if a paired end SRA is used.
 """
 rule makeHTSeqTables:
     input:
-        metadata = METADATA_FOLDER + METADATA_FILE,
-        sam      = STAR_FOLDER     + SAM
+        metadata         = METADATA_FOLDER + METADATA_FILE,
+        sam              = STAR_FOLDER     + SAM,
+        tx_bam_sorted    = STAR_FOLDER     + TX_BAM_SORTED
     output:
-       genes_table       = HTSEQ_FOLDER + GENES_TABLE,
-       transcripts_table = HTSEQ_FOLDER + TRANSCRIPT_TABLE
+       genes_table       = HTSEQ_FOLDER    + GENES_TABLE,
+       transcripts_table = HTSEQ_FOLDER    + TRANSCRIPT_TABLE
     run:
         # If no folder exists, create the folder. 
         shell( "mkdir -p %s " % HTSEQ_FOLDER  )
@@ -292,7 +333,7 @@ rule makeHTSeqTables:
                         --stranded no            \
                         --type     exon          \
                         --idattr   transcript_id \
-                        {input.sam} %s > {output.transcripts_table} ; """ % index_str
+                        {input.tx_bam_sorted} %s > {output.transcripts_table} ; """ % index_str
 
             arguments = htseq_gene_str+" \n "+htseq_transcript_str
         else:
@@ -300,6 +341,25 @@ rule makeHTSeqTables:
         
         shell(arguments)
 
+"""
+Cleanup
+"""
+rule cleanu:
+    input:
+        metadata         = METADATA_FOLDER + METADATA_FILE,
+        tx_bam_sorted    = STAR_FOLDER     + TX_BAM_SORTED
+    run:
+        # If no folder exists, create the folder. 
 
+        json_obj = json.load(open(input.metadata))
+        layout = json_obj["LAYOUT"]
 
+        cleanup_str = "echo `Nothing to clean`"
+        if layout == "SINGLE":
+            cleanup_str = "rm {input.tx_bam_sorted}"
+        elif layout != "PAIRED":
+            print("ERROR", layout)
 
+        shell(cleanup_str)
+
+        
