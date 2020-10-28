@@ -65,7 +65,7 @@ than 75% zero counts.
 """ 
 rule Between_Sample_Normalization: 
     input: 
-        htseq_counts_tsvs = HTSEQ_COUNTS_PASSED_FOLDER + HTSEQ_COUNTS_PASSED_FOLDER 
+        htseq_counts_tsvs = HTSEQ_COUNTS_PASSED_FOLDER + HTSEQ_COUNTS_PASSED_FILE
     output:
         bs_normal_cnts = BETWEEN_SAMPLE_NORMAL_CNTS_FOLDER + BETWEEN_SAMPLE_NORMAL_CNTS_FILE 
     run:
